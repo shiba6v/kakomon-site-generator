@@ -1,0 +1,41 @@
+aside {
+  text-align: right;
+}
+
+header {
+  margin-left: 20px;
+}
+
+a#title {
+  font-size: 2rem;
+  color: #6678b8;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+.description {
+  width: 80%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+}
+
+.side {
+  width: 20%;
+}
+
+.contents {
+  width: 80%;
+}
+
+.body {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: auto;
+}
+
+body {
+  background-color: #eceef6;
+}
