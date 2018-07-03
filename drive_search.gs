@@ -17,11 +17,12 @@ function getAllFilesId(targetFolder){
   return result;
 }
 
-function driveSearch() {
+function myFunction() {
   //var myFile = DriveApp.getFolderById('0B4VuvxSTkWrKTE9BdEpxNTlGbDQ');
   var rootFolderId = "0B4VuvxSTkWrKTE9BdEpxNTlGbDQ"
   rootFolder = DriveApp.getFolderById(rootFolderId);
   result = getAllFilesId(rootFolder);
+  result["root"] = rootFolderId
   var doc = DocumentApp.create('result_' + rootFolderId);
   doc.getBody().appendParagraph(JSON.stringify(result));
 }

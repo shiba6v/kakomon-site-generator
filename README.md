@@ -1,6 +1,7 @@
 ## About
 これは，過去問サイトをGoogleDriveから自動生成するプロジェクトです．
 過去問サイトにするメリットは，後輩が過去問を見つけやすくなることです．
+質問があれば[こちら](https://twitter.com/_6v_)までどうぞ．
 
 ## Usage
 1. Chrome拡張で[Google Apps Script](https://chrome.google.com/webstore/detail/google-apps-script/eoieeedlomnegifmaghhjnghhmcldobl?hl=ja
@@ -24,11 +25,13 @@ https://drive.google.com/drive/u/0/folders/[フォルダID]
 git clone git@github.com:shiba6v/kakomon-site-generator.git
 ```
 
-8. result.jsonに6で生成した結果を貼り付け，スクリプトを実行する．
+8. `kakomon_generate.rb`の`@title`や`@description`を作りたいサイトに合わせて変更する
+
+9. result.jsonに6で生成した結果を貼り付け，スクリプトを実行する．
 ```
 ruby kakomon_generate.rb
 ```
 
-9. `dest`以下にファイルが生成されるので，[BitBalloon](https://www.bitballoon.com/)などにアップロードする．
+10. `dest`以下にファイルが生成されるので，[BitBalloon](https://www.bitballoon.com/)などにアップロードする．
 
-10. 完成！
+11. 完成！

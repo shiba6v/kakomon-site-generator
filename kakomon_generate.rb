@@ -20,5 +20,5 @@ def generate(parent)
   end
 end
 
-parent = @result["root"]
+parent = @result['root']
 generate(parent)
